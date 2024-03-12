@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="layout.css">
+    </head>
+    <body>
+        <h1>ExpandingCraft Application</h1>
+
+        <div class="navbar">
+            <a href="index.html">About</a>
+            <a class="current" href="application.html">Application Form</a>
+            <a href="links.html">Useful Links</a>
+            <a href="images.html">Images</a>
+        </div>
+
+        <form action="/form-handling-url" method="post">
+        <fieldset>
+            <legend>ExpandingCraft Application</legend>
+            <div class="form-row" id="row-1">
+
+                <div class="form-cell" id="ign-label">
+                    <label for="ign">Your IGN:</label>
+                </div>
+
+                <div class="form-cell" id="ign-form">
+                    <input type="text" id="ign" name="ign">
+                </div>
+
+                <div class="form-cell empty">
+                </div>
+
+            </div>
+            <div class="form-row" id="row-2">
+
+                <div class="form-cell" id="block-label">
+                    <label for="block">Your favourite block:</label>
+                </div>
+
+                <div class="form-cell" id="block-form">
+                    <input type="text" id="block" name="block">
+                </div>
+
+                <div class="form-cell empty">
+                </div>
+
+            </div>
+            <div class="form-row" id="row-3">
+
+                <div class="form-cell" id="hack-label">
+                    <label for="hack">I dont like hacking:</label>
+                </div>
+
+                <div class="form-cell" id="hack-form">
+                    <input type="checkbox" id="hack" name="hack">
+                </div>
+
+                <div class="form-cell grief">
+                    <label for="grief">I hereby solemnly swear that I like griefing:</label>
+                    <input type="checkbox" id="grief" name="grief">
+                </div>
+
+            </div>
+            <div class="form-row" id="row-4">
+
+                <div class="form-cell" id="funny-label">
+                    <label for="funny">Write a funny thing that<br>happened in minecraft:</label>
+                </div>
+
+                <div class="form-cell" id="funny-form">
+                    <textarea id="funny" name="funny"></textarea>
+                </div>
+
+                <div class="form-cell empty">
+                </div>
+
+            </div>
+            <div class="form-row" id="row-5">
+
+                <div class="form-cell empty">
+                </div>
+
+                <div class="form-cell" id="submit">
+                    <button type="submit">Apply to<br>Expandingcraft!</button>
+                </div>
+
+                <div class="form-cell empty">
+                </div>
+
+            </div>
+        </fieldset>
+        </form>
+    </body>
+</html>

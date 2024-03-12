@@ -1,0 +1,274 @@
+html{
+    background-color: rgb(209, 206, 199);
+    height: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(23, 29, 28);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(23, 29, 28);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(91, 156, 255);
+    border: 0;
+    font-size: 27px;
+    width: 25%;
+    max-height: 100%;
+    padding: 27px 0px;
+
+}
+.navbar a:hover {
+    background-color: rgb(148, 255, 127);
+}
+.navbar{
+    border: 3px solid rgb(80, 61, 63);
+    border-right: 0;
+    border-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navbar .current{
+    border-spacing: 3px;
+    border: 4px solid rgb(0, 214, 0);
+    box-sizing: border-box;
+    padding: 24px 0px;
+}
+.main1{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template: 1fr/5fr 4fr;
+}
+.p12{
+
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.p12 h2{
+margin: 0;
+margin-top: 20px;
+text-indent: 0;
+}
+.p1{
+    margin-bottom: 20px;
+}
+.footer,
+.p1,
+.p2{
+    line-height: 125%;
+    font-size:x-large;
+    text-indent: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 0 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid  rgb(58, 46, 57);
+    border-radius: 40px;
+    background-color: rgb(134, 209, 138);
+    color: rgb(42, 48, 47);
+}
+.footer h2{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.footer{
+    margin: 0px 20% 30px;
+}
+.img0 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*application form(page 2)*/
+form{
+    box-sizing: border-box;
+    margin: 40px 15% 20px;
+    height: 100%;
+}
+form>fieldset{
+    min-height: 70%;
+    height: fit-content;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 30px;
+    border-color: rgb(11, 29, 81);
+    border-width: 2px;
+    background-color: rgb(94, 147, 232);
+
+}
+legend{
+    margin: 0 auto;
+    border: solid 2px rgb(11, 29, 81);
+    border-radius: 5px;
+    font-size: large;
+    background-color: rgb(64, 201, 64);
+}
+.form-row{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+
+}
+.form-cell{
+    margin: 5px;
+    width: 33%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    font-size: x-large;
+    text-align: end;
+    justify-content: flex-end;
+}
+.form-cell{
+    height: 50%;
+}
+.form-cell *{
+    background-color: rgb(209, 206, 199);
+    border-color: rgb(11, 29, 81);
+    border-width: 3px;
+}
+.form-cell label{
+    background-color: transparent;
+}
+.form-cell input,
+.form-cell textarea{
+    color: rgb(8, 12, 10);
+}
+.form-cell input{
+    /*border-color: rgb(11, 29, 81);
+    border-width: 3px;*/
+    height: 100%;
+    font-size: x-large;
+    text-align: center;
+}
+.grief>label{
+    width: 70%;
+    text-align: center;
+}
+.grief,
+#hack-form{
+    justify-content: flex-start;
+}
+input[type='checkbox']{
+    /*color: transparent;*/
+    accent-color: green;
+    box-shadow: 0;
+    outline: solid 2px rgb(11, 29, 81);
+    width: 50px;
+    height: 50px;
+}
+input{
+    width: 100%;
+}
+textarea{
+    font-size: large;
+    width: 100%;
+    height: 100%;
+}
+#submit{
+    justify-content: center;
+    font-size: large;
+}
+#submit>button{
+    background-color: rgb(64, 201, 64);
+    width: 70%;
+    min-width: fit-content;
+    height: fit-content;
+    font-size: x-large;
+}
+.form-cell *:focus{
+    border-color: rgb(18, 219, 18);
+}
+/*Page 3 (links)*/
+.linkbox{
+    box-sizing: border-box;
+    padding: 20px 10px;
+    display: grid;
+    /*grid-row-gap: 3%;*/
+    grid-template: repeat(5, minmax(min-content, 20%))/1fr 1fr;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    border: 1px solid  rgb(58, 46, 57);
+    border-radius: 40px;
+    background-color: rgb(134, 209, 138);
+    color: rgb(42, 48, 47);
+    width: 70%;
+    height: fit-content;
+    min-height: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+.linkbox>li{
+    list-style-position: inside;
+    text-align: center;
+    justify-self: center;
+    margin-left: 30px;
+}
+.linkbox>a{
+    font-size: x-large;
+    text-decoration: none;
+    margin-left: 20px;
+    text-align: start;
+}
+.linkbox>*{
+    align-self: center;
+    width: fit-content;
+}
+/*page 4 Images*/
+.imagegrid{
+    box-sizing: border-box;
+    max-width: 100%;
+    min-height: fit-content;
+    margin: 20px;
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+    background-color: rgb(134, 209, 138);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid  rgb(58, 46, 57);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.image img{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+.image{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-decoration: 0;
+}
+.image>label{
+    color: rgb(42, 48, 47);
+    font-size: large;
+
+}
